@@ -12,9 +12,11 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         :root {
-/*            --primary: #2c3e50;
+           --primary: #2c3e50;
             --secondary: #E8755F;
             --accent: #F4D9C4;
             --accent-green: #6BA566;
@@ -24,8 +26,8 @@
             --light-bg: #f9f7f2;
             --light-surface: #ffffff;
             --light-text: #2c3e50;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
-                        --primary: #6B5CE7;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        /* --primary: #6B5CE7;
             --secondary: #FF6B6B;
             --accent: #FFB74D;
             --dark-bg: #0f172a;
@@ -34,7 +36,7 @@
             --light-bg: #f8f9fa;
             --light-surface: #ffffff;
             --light-text: #1a1f3a;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
         }
 
         * {
@@ -197,7 +199,7 @@
         }
 
         .nav-link {
-            color: var(--light-text) !important;
+            color: #ddd !important;
             font-weight: 500;
             position: relative;
             margin: 0 10px;
@@ -205,7 +207,7 @@
         }
 
         body.dark-mode .nav-link {
-            color: var(--dark-text) !important;
+            color: var(--secondary) !important;
         }
 
         .nav-link::after {
@@ -710,7 +712,7 @@
             overflow: hidden;
             aspect-ratio: 1;
             cursor: pointer;
-            group/item: true;
+            /* group/item: true; */
         }
 
         .gallery-item img {
@@ -1026,18 +1028,18 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background: var(--primary); box-shadow: 0 4px 20px rgba(0,0,0,0.15); z-index: 1000;">
         <div class="container">
-            <a class="navbar-brand d-flex" href="#" style="color: white; font-weight: 700; font-size: 1.5rem;">
-                <img src="file:///G:/office/projects/wetransfer_lightwork-website-folder_2026-01-19_1756/lightworks_19th%20Jan26/assets/img/logo.png" style="flex-shrink: 0;" />
-                <i class="fas fa-lotus"></i>
-                <p> 
-                <span style="font-size:1.5rem;">Lightworks</span> <br/><span style="font-size:1rem">Mindfulness</span>
-                </p>
+            <a class="navbar-brand d-flex" href="#" style="gap:0.3rem;align-items: center; color: white; font-weight: 700; font-size: 1.5rem;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" >
+                <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/logo.png" style="width: 5rem; height: 5rem;" data-aos="zoom-in" data-aos-duration="1000"/>
+                <!-- <i class="fas fa-lotus"></i> -->
+                <div class="d-flex flex-column"> 
+                <span style="font-size:1.5rem;">Lightworks</span> <span style="font-size:1rem">Mindfulness</span>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-3">
+                <ul class="navbar-nav ms-auto gap-3" data-aos="zoom-in" data-aos-duration="1000">
                     <li class="nav-item"><a class="nav-link" href="#what-is" style="color: white;"><span>What is Mindfulness</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#features" style="color: white;"><span>Features</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials" style="color: white;"><span>Testimonials</span></a></li>
@@ -1057,11 +1059,11 @@
         <div class="slider-wrapper" style="position: relative; height: 100%; display: flex;">
             <!-- Slide 1 -->
             <div class="slider-slide" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; opacity: 1; background: linear-gradient(135deg, var(--primary) 0%, rgba(44, 62, 80, 0.8) 100%);">
-                <img src="/images/q.jpeg" alt="Mindfulness" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3; position: absolute;">
+                <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_slide2.jpg" alt="Mindfulness" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3; position: absolute;" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="container h-100 d-flex align-items-center position-relative z-2">
                     <div class="row w-100">
                         <div class="col-lg-6">
-                            <h1 style="color: white; font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2; animation: slideInUp 0.8s ease-out;">
+                            <h1 style="color: white; font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2; animation: slideInUp 0.8s ease-out;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                                 Mindfulness is the dawn of a transformative era
                             </h1>
                             <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 30px; animation: slideInUp 0.8s ease-out 0.2s both;">
@@ -1077,7 +1079,7 @@
 
             <!-- Slide 2 -->
             <div class="slider-slide" style="position: absolute; width: 100%; height: 100%; left: 100%; top: 0; opacity: 0; background: linear-gradient(135deg, var(--accent-green) 0%, rgba(107, 165, 102, 0.8) 100%);">
-                <img src="/images/q.jpeg" alt="Education" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2; position: absolute;">
+                <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_slide3.jpg" alt="Education" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2; position: absolute;" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="container h-100 d-flex align-items-center position-relative z-2">
                     <div class="row w-100">
                         <div class="col-lg-6">
@@ -1096,8 +1098,9 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="slider-slide" style="position: absolute; width: 100%; height: 100%; left: 200%; top: 0; opacity: 0; background: linear-gradient(135deg, var(--secondary) 0%, rgba(232, 117, 95, 0.8) 100%);">
-                <img src="/images/q.jpeg" alt="Community" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2; position: absolute;">
+             <!-- background: linear-gradient(135deg, var(--secondary) 0%, rgba(232, 117, 95, 0.8) 100%); -->
+            <div class="slider-slide" style="position: absolute; width: 100%; height: 100%; left: 200%; top: 0; opacity: 0; background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(232, 117, 95, 0.8) 100%);">
+                <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_slide1.jpg" alt="Community" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2; position: absolute;" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="container h-100 d-flex align-items-center position-relative z-2">
                     <div class="row w-100">
                         <div class="col-lg-6">
@@ -1135,7 +1138,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-image"></div>
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
             <h1>Mindfulness is the dawn of a transformative era for humanity and education</h1>
             <p>Join us in discovering the power of mindfulness and transform your life today</p>
             <button class="btn-primary-gradient" onclick="document.getElementById('mindfulness').scrollIntoView()">
@@ -1147,15 +1150,15 @@
     <!-- What is Mindfulness -->
     <section class="mindfulness-section" id="mindfulness">
         <div class="container">
-            <h2 class="section-title">What is Mindfulness?</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">What is Mindfulness?</h2>
             <p class="section-subtitle">Discover the essence of mindfulness and how it can transform your daily life</p>
 
             <div class="mindfulness-content">
                 <div class="mindfulness-image fade-in-on-scroll">
-                    <img src="/images/q.jpeg" alt="Mindfulness Practice">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_home-about-img.jpg" alt="Mindfulness Practice" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="mindfulness-text fade-in-on-scroll">
-                    <h3>The Foundation of Inner Peace</h3>
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">The Foundation of Inner Peace</h3>
                     <p>Mindfulness is the practice of bringing your full attention to the present moment without judgment. It's about observing your thoughts, feelings, and sensations with curiosity and compassion.</p>
                     <p>Through consistent practice, mindfulness helps reduce stress, improve focus, and enhance overall well-being. It's a journey of self-discovery that transforms how you relate to yourself and the world around you.</p>
                     <p>Whether you're seeking peace, clarity, or personal growth, mindfulness offers proven benefits backed by scientific research and thousands of years of wisdom.</p>
@@ -1168,55 +1171,55 @@
     <!-- Features Section -->
     <section class="features-section" id="features">
         <div class="container">
-            <h2 class="section-title">Why is Mindfulness Important?</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Why is Mindfulness Important?</h2>
             <p class="section-subtitle">Explore the transformative benefits of mindfulness practice</p>
 
             <div class="features-grid">
                 <div class="feature-card fade-in-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-brain" data-aos="zoom-in" data-aos-duration="1000"></i>
                     </div>
-                    <h4>Mental Clarity</h4>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Mental Clarity</h4>
                     <p>Enhance focus and concentration, making your mind sharper and more efficient in all endeavors.</p>
                 </div>
 
                 <div class="feature-card fade-in-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart" data-aos="zoom-in" data-aos-duration="1000"></i>
                     </div>
-                    <h4>Emotional Balance</h4>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Emotional Balance</h4>
                     <p>Develop emotional resilience and better manage stress, anxiety, and difficult emotions.</p>
                 </div>
 
                 <div class="feature-card fade-in-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-shield-alt" data-aos="zoom-in" data-aos-duration="1000"></i>
                     </div>
-                    <h4>Better Health</h4>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Better Health</h4>
                     <p>Improve physical health with reduced blood pressure, better sleep, and stronger immunity.</p>
                 </div>
 
                 <div class="feature-card fade-in-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-users" data-aos="zoom-in" data-aos-duration="1000"></i>
                     </div>
-                    <h4>Improved Relationships</h4>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Improved Relationships</h4>
                     <p>Cultivate compassion and empathy, leading to deeper and more meaningful connections.</p>
                 </div>
 
                 <div class="feature-card fade-in-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-lightbulb" data-aos="zoom-in" data-aos-duration="1000"></i>
                     </div>
-                    <h4>Enhanced Creativity</h4>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Enhanced Creativity</h4>
                     <p>Unlock your creative potential by quieting mental noise and allowing new ideas to flourish.</p>
                 </div>
 
                 <div class="feature-card fade-in-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
+                        <i class="fas fa-leaf" data-aos="zoom-in" data-aos-duration="1000"></i>
                     </div>
-                    <h4>Self-Discovery</h4>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Self-Discovery</h4>
                     <p>Gain deeper insights into yourself and develop a stronger sense of purpose and meaning.</p>
                 </div>
             </div>
@@ -1226,15 +1229,15 @@
     <!-- How to Shift Section -->
     <section class="shift-section" id="shift">
         <div class="container">
-            <h2 class="section-title">How to Shift Towards Mindfulness</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">How to Shift Towards Mindfulness</h2>
             <p class="section-subtitle">A practical guide to integrating mindfulness into your life</p>
 
             <div class="shift-item fade-in-on-scroll">
                 <div class="shift-image">
-                    <img src="/images/q.jpeg" alt="Meditation Practice">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_Imbibe1.jpg" alt="Meditation Practice" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="shift-text">
-                    <h3>Start with Meditation</h3>
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Start with Meditation</h3>
                     <p>Begin your mindfulness journey with simple meditation practices. Even 5-10 minutes daily can create profound changes in your mental state and overall well-being.</p>
                     <button class="btn-primary-gradient">Learn Techniques</button>
                 </div>
@@ -1242,10 +1245,10 @@
 
             <div class="shift-item fade-in-on-scroll">
                 <div class="shift-image">
-                    <img src="/images/q.jpeg" alt="Daily Practice">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_Imbibe2.jpg" alt="Daily Practice" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="shift-text">
-                    <h3>Daily Mindful Living</h3>
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Daily Mindful Living</h3>
                     <p>Extend mindfulness beyond meditation into your daily activities. Practice being present while eating, walking, or interacting with others.</p>
                     <button class="btn-primary-gradient">Explore Practices</button>
                 </div>
@@ -1253,10 +1256,10 @@
 
             <div class="shift-item fade-in-on-scroll">
                 <div class="shift-image">
-                    <img src="/images/q.jpeg" alt="Community Practice">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_Imbibe4.jpg" alt="Community Practice" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="shift-text">
-                    <h3>Join a Community</h3>
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Join a Community</h3>
                     <p>Connect with like-minded individuals in mindfulness groups and classes. Shared practice strengthens your commitment and provides support.</p>
                     <button class="btn-primary-gradient">Find Groups</button>
                 </div>
@@ -1264,10 +1267,10 @@
 
             <div class="shift-item fade-in-on-scroll">
                 <div class="shift-image">
-                    <img src="/images/q.jpeg" alt="Continue Growth">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/bg/ind_Imbibe3.jpg" alt="Continue Growth" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="shift-text">
-                    <h3>Continuous Growth</h3>
+                    <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Continuous Growth</h3>
                     <p>Deepen your practice over time with advanced techniques and teachings. Mindfulness is a lifelong journey of discovery and transformation.</p>
                     <button class="btn-primary-gradient">Advanced Path</button>
                 </div>
@@ -1278,11 +1281,11 @@
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
-            <h2 class="section-title" style="color: white; margin-bottom: 20px;">Our Impact</h2>
+            <h2 class="section-title" style="color: white; margin-bottom: 20px;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Our Impact</h2>
             <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">Join thousands who have transformed their lives</p>
 
             <div class="stats-container">
-                <div class="stat-item fade-in-on-scroll">
+                <div class="stat-item fade-in-on-scroll" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                     <div class="stat-number">50,000+</div>
                     <div class="stat-label">Happy Students</div>
                 </div>
@@ -1308,27 +1311,27 @@
     <!-- Gallery Section -->
     <section class="gallery-section" id="gallery">
         <div class="container">
-            <h2 class="section-title">Our Happy Results</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Our Happy Results</h2>
             <p class="section-subtitle">See the transformations and positive changes in our community</p>
 
             <div class="gallery-grid fade-in-on-scroll">
                 <div class="gallery-item">
-                    <img src="/images/q.jpeg" alt="Gallery 1">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/gallery/ind_2.jpg" alt="Gallery 1" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="gallery-item">
-                    <img src="/images/q.jpeg" alt="Gallery 2">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/gallery/ind_2.jpg" alt="Gallery 2" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="gallery-item">
-                    <img src="/images/q.jpeg" alt="Gallery 3">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/gallery/ind_2.jpg" alt="Gallery 3" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="gallery-item">
-                    <img src="/images/q.jpeg" alt="Gallery 4">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/gallery/ind_2.jpg" alt="Gallery 4" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="gallery-item">
-                    <img src="/images/q.jpeg" alt="Gallery 5">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/gallery/ind_2.jpg" alt="Gallery 5" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="gallery-item">
-                    <img src="/images/q.jpeg" alt="Gallery 6">
+                    <img src="https://ayushdce2.github.io/demo_theme/lightworks_demo/lightworks/assets/img/gallery/ind_2.jpg" alt="Gallery 6" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
             </div>
         </div>
@@ -1337,12 +1340,12 @@
     <!-- Testimonials Section -->
     <section class="testimonials-section" id="testimonials">
         <div class="container">
-            <h2 class="section-title">Our Happy Families</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Our Happy Families</h2>
             <p class="section-subtitle">Hear from people whose lives have been transformed by mindfulness</p>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in-on-scroll">
-                    <div class="testimonial-text">
+                    <div class="testimonial-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                         "This program changed my life completely. I've learned to manage stress better and find peace in everyday moments. Highly recommend it to everyone!"
                     </div>
                     <div class="testimonial-author">
@@ -1355,7 +1358,7 @@
                 </div>
 
                 <div class="testimonial-card fade-in-on-scroll">
-                    <div class="testimonial-text">
+                    <div class="testimonial-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                         "I was skeptical at first, but the mindfulness practices have truly helped me improve my focus and productivity at work. Best investment I've made!"
                     </div>
                     <div class="testimonial-author">
@@ -1368,7 +1371,7 @@
                 </div>
 
                 <div class="testimonial-card fade-in-on-scroll">
-                    <div class="testimonial-text">
+                    <div class="testimonial-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                         "The compassionate teaching and supportive community have helped me heal from anxiety and depression. I feel like myself again!"
                     </div>
                     <div class="testimonial-author">
@@ -1381,7 +1384,7 @@
                 </div>
 
                 <div class="testimonial-card fade-in-on-scroll">
-                    <div class="testimonial-text">
+                    <div class="testimonial-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                         "As a parent, this course helped me become more present with my family. My kids have noticed the positive change in me too!"
                     </div>
                     <div class="testimonial-author">
@@ -1394,7 +1397,7 @@
                 </div>
 
                 <div class="testimonial-card fade-in-on-scroll">
-                    <div class="testimonial-text">
+                    <div class="testimonial-text " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                         "The techniques are easy to understand and implement. I've seen significant improvements in my sleep quality and overall happiness."
                     </div>
                     <div class="testimonial-author">
@@ -1407,7 +1410,7 @@
                 </div>
 
                 <div class="testimonial-card fade-in-on-scroll">
-                    <div class="testimonial-text">
+                    <div class="testimonial-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                         "This is more than just a course—it's a transformational journey. The teachers genuinely care and it shows in their work."
                     </div>
                     <div class="testimonial-author">
@@ -1425,7 +1428,7 @@
     <!-- Newsletter Section -->
     <section class="newsletter-section">
         <div class="container">
-            <h2 class="section-title" style="color: white; margin-bottom: 20px;">Subscribe To Our Newsletter</h2>
+            <h2 class="section-title" style="color: white; margin-bottom: 20px;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Subscribe To Our Newsletter</h2>
             <p style="font-size: 1.1rem; opacity: 0.95;">Get exclusive tips, practices, and updates delivered to your inbox</p>
 
             <form class="newsletter-form" id="newsletterForm">
@@ -1440,7 +1443,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>MindfulEd</h4>
+                    <h4>Lightworks <span>Mindful</span></h4>
                     <p style="color: rgba(255, 255, 255, 0.7);">Transforming lives through the power of mindfulness and education.</p>
                     <div class="social-links">
                         <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -1473,15 +1476,15 @@
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Mindful St, Peace City, PC 12345</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Lightworks, Lightworks City, PC 12345</li>
                         <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@mindfuledu.com</li>
+                        <li><i class="fas fa-envelope"></i> info@Lightworks.com</li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 MindfulEd. All rights reserved. | <a href="#" style="color: var(--accent); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--accent); text-decoration: none;">Terms of Service</a></p>
+                <p>&copy; 2026 Lightworks. All rights reserved. | <a href="#" style="color: var(--accent); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--accent); text-decoration: none;">Terms of Service</a></p>
             </div>
         </div>
     </footer>
@@ -1496,6 +1499,8 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         $(document).ready(function() {
             // Theme Toggle
@@ -1652,5 +1657,9 @@
             });
         });
     </script>
+
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
